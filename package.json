@@ -9,7 +9,7 @@
     "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "^9",
     "axios": "^0.21.1",
-    "history": "^5.0.0",
+    "history": "^4.10.1",
     "mobx": "^6.0.4",
     "mobx-persist": "^0.4.1",
     "mobx-react": "^7.0.5",

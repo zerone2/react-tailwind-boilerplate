@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { observer } from 'mobx-react'
 import sampleImg from 'assets/images/howtodie.jpg'
@@ -5,12 +6,12 @@ import sampleImg from 'assets/images/howtodie.jpg'
 const MainPage = observer(() => {
   const history = useHistory()
   return (
-    <div>
-      <h1>This is Home</h1>
+    <div className={'flex flex-col'}>
+      <h1>MainPage</h1>
       <img src={sampleImg} alt={'sample img'} />
-      <div>
-        <Link to={'/test'}>go to react test page</Link>
-      </div>
+      <Link to={'/sample'}>
+        <button className={'mt-10 bg-blue-300 border-0'}>go to react test page</button>
+      </Link>
     </div>
   )
 })
