@@ -1,6 +1,4 @@
 import React from 'react'
-import logo from './logo.svg';
-import './App.css';
 import { create } from 'mobx-persist'
 import { Provider, observer, useLocalStore } from 'mobx-react'
 import { Router, Route, Switch } from 'react-router-dom'
@@ -29,7 +27,7 @@ const App = observer(() => {
   return (
     <Provider {...stores}>
       <Router history={browserHistory}>
-        <div className="App">
+        <div className={'text-center'}>
           {store.storeLoaded ? (
             <Switch>
               <Route exact path={'/'} component={MainPage} />

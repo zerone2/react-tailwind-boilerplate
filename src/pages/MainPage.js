@@ -7,11 +7,9 @@ const MainPage = observer(() => {
   const history = useHistory()
   return (
     <div className={'flex flex-col'}>
-      <h1>MainPage</h1>
+      <h1 className={'font-bold text-5xl'}>MainPage</h1>
       <img src={sampleImg} alt={'sample img'} />
-      <Link to={'/sample'}>
-        <button className={'mt-10 bg-blue-300 border-0'}>go to react test page</button>
-      </Link>
+      <button className={'mt-10 bg-blue-300 border-0 py-2 px-5 rounded-md'}><Link to={'/sample'}>go to react test page</Link></button>
     </div>
   )
 })
