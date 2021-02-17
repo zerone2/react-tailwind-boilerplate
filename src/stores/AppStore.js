@@ -1,6 +1,6 @@
-import { action, observable } from 'mobx'
+import { observable } from 'mobx'
 import { persist } from 'mobx-persist'
 
 export default class AppStore {
-  @persist @observable appInfo = {}
+  @persist('object') @observable appInfo = {}
 }

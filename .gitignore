@@ -29,3 +29,5 @@ yarn-error.log*
 #ide
 .idea/
 idea/
+.gradle
+gradle/
