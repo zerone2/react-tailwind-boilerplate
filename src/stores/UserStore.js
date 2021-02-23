@@ -5,7 +5,7 @@ export default class UserStore {
   @persist @observable session_key = ''
   @persist('object') @observable currentUser = {
     email: '',
-    name: '',
+    name: ''
   }
   @persist @observable isAuthenticated = false
 }

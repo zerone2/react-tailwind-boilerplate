@@ -11,13 +11,13 @@ const axiosApi = (url, method = 'GET', data, options = {}) => {
     method,
     headers: {
       Accept: 'application/json',
-      'Content-Type': 'application/json',
-    },
+      'Content-Type': 'application/json'
+    }
   }
   const config = {
     ...defaultConfing,
     ...data,
-    ...options,
+    ...options
   }
   return axios(config).then((response) => {
     const { data } = response

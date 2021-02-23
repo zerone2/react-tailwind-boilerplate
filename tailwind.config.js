@@ -7,12 +7,12 @@ module.exports = {
     inset: {
       20: '20px',
       '30px': '30px',
-      ...defaultTheme.inset,
+      ...defaultTheme.inset
     },
     fontSize: {
       '10px': '10px',
       tiny: '0.625rem',
-      ...defaultTheme.fontSize,
+      ...defaultTheme.fontSize
     },
     colors: {
       defaultGray: '#f5f6f7',
@@ -40,24 +40,24 @@ module.exports = {
       resultGray1: '#FBFBFB',
       resultGray2: '#F5F6F7',
 
-      ...defaultTheme.colors,
+      ...defaultTheme.colors
     },
     fontFamily: {
-      SpoqaHanSans: ['SpoqaHanSans'],
+      SpoqaHanSans: ['SpoqaHanSans']
     },
     zIndex: {
       '-10': '-10',
       888: 888,
       999: 999,
-      ...defaultTheme.zIndex,
+      ...defaultTheme.zIndex
     },
     minHeight: {
       '1/2': '50%',
-      ...defaultTheme.minHeight,
+      ...defaultTheme.minHeight
     },
     extend: {
       spacing: {
-        7: '1.75rem',
+        7: '1.75rem'
       },
       width: {
         '12px': '12px',
@@ -70,7 +70,7 @@ module.exports = {
         18: '4.5rem',
         '18px': '18px',
         '32%': '32%',
-        '36%': '36%',
+        '36%': '36%'
       },
       height: {
         '12px': '12px',
@@ -82,21 +82,21 @@ module.exports = {
         26: '6.5rem',
         '2xScreen': '200vh',
         360: '360px',
-        '180px': '180px',
+        '180px': '180px'
       },
       maxHeight: {
         80: '80%',
-        100: '100%',
+        100: '100%'
       },
       maxWidth: {
         '1/3': '33%',
         160: '160px',
-        104: '104px',
+        104: '104px'
       },
       minWidth: {
         '1/3': '33%',
         160: '160px',
-        104: '104px',
+        104: '104px'
       },
       margin: {
         '2px': '2px',
@@ -108,7 +108,7 @@ module.exports = {
         '13px': '13px',
         '30px': '30px',
         '34px': '34px',
-        '40px': '40px',
+        '40px': '40px'
       },
       padding: {
         '5px': '5px',
@@ -119,22 +119,22 @@ module.exports = {
         '11px': '11px',
         '14px': '14px',
         '30px': '30px',
-        '40px': '40px',
+        '40px': '40px'
       },
       borderWidth: {
         10: '10px',
-        ...defaultTheme.borderWidth,
+        ...defaultTheme.borderWidth
       },
       borderRadius: {
-        '16px': '16px',
-      },
-    },
+        '16px': '16px'
+      }
+    }
   },
   variants: {
     backgroundColor: ['responsive', 'hover', 'focus'],
     borderRadius: ['first', 'last'],
     borderWidth: ['first', 'last'],
-    borderStyle: ['first', 'last'],
+    borderStyle: ['first', 'last']
   },
-  plugins: [],
+  plugins: []
 }

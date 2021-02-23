@@ -12,7 +12,7 @@ const hydrate = create()
 const App = observer(() => {
   const store = useLocalObservable(() => ({
     storeLoaded: false,
-    setStoreLoaded: (load) => store.storeLoaded = load
+    setStoreLoaded: (load) => (store.storeLoaded = load)
   }))
 
   React.useEffect(() => {
@@ -37,7 +37,7 @@ const App = observer(() => {
         </div>
       </Router>
     </Provider>
-  );
+  )
 })
 
-export default App;
+export default App

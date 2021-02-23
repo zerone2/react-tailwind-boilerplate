@@ -4,11 +4,11 @@ import UserStore from './UserStore'
 
 export const stores = {
   appStore: new AppStore(),
-  userStore: new UserStore(),
+  userStore: new UserStore()
 }
 
 export const storesContext = React.createContext({
-  ...stores,
+  ...stores
 })
 
 export const useStores = () => {
