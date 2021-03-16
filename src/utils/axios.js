@@ -6,7 +6,7 @@ let URL = process.env.NODE_ENV !== 'production' ? '/api' : 'http://test-api/api'
 const axiosApi = (url, method = 'GET', data, options = {}) => {
   data = method.toUpperCase() === 'GET' ? { params: { ...data } } : { data }
 
-  const defaultConfing = {
+  const defaultConfig = {
     url: URL + url,
     method,
     headers: {
@@ -15,7 +15,7 @@ const axiosApi = (url, method = 'GET', data, options = {}) => {
     }
   }
   const config = {
-    ...defaultConfing,
+    ...defaultConfig,
     ...data,
     ...options
   }
